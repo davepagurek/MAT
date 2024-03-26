@@ -1,4 +1,14 @@
-/******/ // The require scope
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["MAT"] = factory();
+	else
+		root["MAT"] = factory();
+})(self, () => {
+return /******/ // The require scope
 /******/ var __webpack_require__ = {};
 /******/ 
 /************************************************************************/
@@ -19,54 +29,67 @@
 /******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ })();
 /******/ 
+/******/ /* webpack/runtime/make namespace object */
+/******/ (() => {
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ })();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  A3: () => (/* reexport */ beziers_to_svg_path_str_beziersToSvgPathStr),
-  bz: () => (/* reexport */ cpNodeComparator),
-  Ev: () => (/* reexport */ createCpNode),
-  $d: () => (/* reexport */ createPos),
-  zh: () => (/* reexport */ drawBranch),
-  Ls: () => (/* reexport */ drawElemFunctions),
-  CU: () => (/* reexport */ drawMat),
-  gM: () => (/* reexport */ enableDebugForMat),
-  xD: () => (/* reexport */ enhanceCpNode),
-  SQ: () => (/* reexport */ findMats),
-  f4: () => (/* reexport */ getAllOnLoop),
-  BG: () => (/* reexport */ getBoundaryBezierPartsToNext),
-  Ij: () => (/* reexport */ getBoundaryBeziersToNext),
-  tQ: () => (/* reexport */ getBoundaryPieceBeziers),
-  C_: () => (/* reexport */ getBranches),
-  G: () => (/* reexport */ getChildren),
-  bx: () => (/* reexport */ getClosestBoundaryPointCertified),
-  DZ: () => (/* reexport */ getClosestSquareDistanceToRect),
-  yc: () => (/* reexport */ getCpNodesOnCircle),
-  wH: () => (/* reexport */ getCurveBetween),
-  N0: () => (/* reexport */ getCurveToNext),
-  EC: () => (/* reexport */ getFirstExit),
-  Jt: () => (/* reexport */ getPathsFromStr),
-  DC: () => (/* reexport */ getProngCount),
-  PF: () => (/* reexport */ getRealProngCount),
-  tO: () => (/* reexport */ getShapeBounds),
-  Sl: () => (/* reexport */ insertCpNode),
-  ZN: () => (/* reexport */ isFullyTerminating),
-  MY: () => (/* reexport */ isOnSameCircle),
-  bA: () => (/* reexport */ isSharp),
-  p8: () => (/* reexport */ isTerminating),
-  bQ: () => (/* reexport */ loopFromBeziers),
-  WN: () => (/* reexport */ matCurveToNextVertex),
-  r0: () => (/* reexport */ removeCpNode),
-  UW: () => (/* reexport */ simplifyMat),
-  _T: () => (/* reexport */ simplifyMatMapOnly),
-  Dw: () => (/* reexport */ sweep_line_sweepLine),
-  xs: () => (/* reexport */ toScaleAxis),
-  vU: () => (/* reexport */ traverseCp),
-  y9: () => (/* reexport */ traverseEdges),
-  Fw: () => (/* reexport */ traverseVertices),
-  QE: () => (/* reexport */ trimMat),
-  pI: () => (/* reexport */ vertexChildren)
+  beziersToSvgPathStr: () => (/* reexport */ beziers_to_svg_path_str_beziersToSvgPathStr),
+  cpNodeComparator: () => (/* reexport */ cpNodeComparator),
+  createCpNode: () => (/* reexport */ createCpNode),
+  createPos: () => (/* reexport */ createPos),
+  drawBranch: () => (/* reexport */ drawBranch),
+  drawElemFunctions: () => (/* reexport */ drawElemFunctions),
+  drawMat: () => (/* reexport */ drawMat),
+  enableDebugForMat: () => (/* reexport */ enableDebugForMat),
+  enhanceCpNode: () => (/* reexport */ enhanceCpNode),
+  findMats: () => (/* reexport */ findMats),
+  getAllOnLoop: () => (/* reexport */ getAllOnLoop),
+  getBoundaryBezierPartsToNext: () => (/* reexport */ getBoundaryBezierPartsToNext),
+  getBoundaryBeziersToNext: () => (/* reexport */ getBoundaryBeziersToNext),
+  getBoundaryPieceBeziers: () => (/* reexport */ getBoundaryPieceBeziers),
+  getBranches: () => (/* reexport */ getBranches),
+  getChildren: () => (/* reexport */ getChildren),
+  getClosestBoundaryPointCertified: () => (/* reexport */ getClosestBoundaryPointCertified),
+  getClosestSquareDistanceToRect: () => (/* reexport */ getClosestSquareDistanceToRect),
+  getCpNodesOnCircle: () => (/* reexport */ getCpNodesOnCircle),
+  getCurveBetween: () => (/* reexport */ getCurveBetween),
+  getCurveToNext: () => (/* reexport */ getCurveToNext),
+  getFirstExit: () => (/* reexport */ getFirstExit),
+  getPathsFromStr: () => (/* reexport */ getPathsFromStr),
+  getProngCount: () => (/* reexport */ getProngCount),
+  getRealProngCount: () => (/* reexport */ getRealProngCount),
+  getShapeBounds: () => (/* reexport */ getShapeBounds),
+  insertCpNode: () => (/* reexport */ insertCpNode),
+  isFullyTerminating: () => (/* reexport */ isFullyTerminating),
+  isOnSameCircle: () => (/* reexport */ isOnSameCircle),
+  isSharp: () => (/* reexport */ isSharp),
+  isTerminating: () => (/* reexport */ isTerminating),
+  loopFromBeziers: () => (/* reexport */ loopFromBeziers),
+  matCurveToNextVertex: () => (/* reexport */ matCurveToNextVertex),
+  removeCpNode: () => (/* reexport */ removeCpNode),
+  simplifyMat: () => (/* reexport */ simplifyMat),
+  simplifyMatMapOnly: () => (/* reexport */ simplifyMatMapOnly),
+  sweepLine: () => (/* reexport */ sweep_line_sweepLine),
+  toScaleAxis: () => (/* reexport */ toScaleAxis),
+  traverseCp: () => (/* reexport */ traverseCp),
+  traverseEdges: () => (/* reexport */ traverseEdges),
+  traverseVertices: () => (/* reexport */ traverseVertices),
+  trimMat: () => (/* reexport */ trimMat),
+  vertexChildren: () => (/* reexport */ vertexChildren)
 });
 
 ;// CONCATENATED MODULE: ./node_modules/flo-boolean/node/svg/beziers-to-svg-path-str.js
@@ -33543,47 +33566,6 @@ function sweep_line_compare(a, b) {
 
 
 
-var __webpack_exports__beziersToSvgPathStr = __webpack_exports__.A3;
-var __webpack_exports__cpNodeComparator = __webpack_exports__.bz;
-var __webpack_exports__createCpNode = __webpack_exports__.Ev;
-var __webpack_exports__createPos = __webpack_exports__.$d;
-var __webpack_exports__drawBranch = __webpack_exports__.zh;
-var __webpack_exports__drawElemFunctions = __webpack_exports__.Ls;
-var __webpack_exports__drawMat = __webpack_exports__.CU;
-var __webpack_exports__enableDebugForMat = __webpack_exports__.gM;
-var __webpack_exports__enhanceCpNode = __webpack_exports__.xD;
-var __webpack_exports__findMats = __webpack_exports__.SQ;
-var __webpack_exports__getAllOnLoop = __webpack_exports__.f4;
-var __webpack_exports__getBoundaryBezierPartsToNext = __webpack_exports__.BG;
-var __webpack_exports__getBoundaryBeziersToNext = __webpack_exports__.Ij;
-var __webpack_exports__getBoundaryPieceBeziers = __webpack_exports__.tQ;
-var __webpack_exports__getBranches = __webpack_exports__.C_;
-var __webpack_exports__getChildren = __webpack_exports__.G;
-var __webpack_exports__getClosestBoundaryPointCertified = __webpack_exports__.bx;
-var __webpack_exports__getClosestSquareDistanceToRect = __webpack_exports__.DZ;
-var __webpack_exports__getCpNodesOnCircle = __webpack_exports__.yc;
-var __webpack_exports__getCurveBetween = __webpack_exports__.wH;
-var __webpack_exports__getCurveToNext = __webpack_exports__.N0;
-var __webpack_exports__getFirstExit = __webpack_exports__.EC;
-var __webpack_exports__getPathsFromStr = __webpack_exports__.Jt;
-var __webpack_exports__getProngCount = __webpack_exports__.DC;
-var __webpack_exports__getRealProngCount = __webpack_exports__.PF;
-var __webpack_exports__getShapeBounds = __webpack_exports__.tO;
-var __webpack_exports__insertCpNode = __webpack_exports__.Sl;
-var __webpack_exports__isFullyTerminating = __webpack_exports__.ZN;
-var __webpack_exports__isOnSameCircle = __webpack_exports__.MY;
-var __webpack_exports__isSharp = __webpack_exports__.bA;
-var __webpack_exports__isTerminating = __webpack_exports__.p8;
-var __webpack_exports__loopFromBeziers = __webpack_exports__.bQ;
-var __webpack_exports__matCurveToNextVertex = __webpack_exports__.WN;
-var __webpack_exports__removeCpNode = __webpack_exports__.r0;
-var __webpack_exports__simplifyMat = __webpack_exports__.UW;
-var __webpack_exports__simplifyMatMapOnly = __webpack_exports__._T;
-var __webpack_exports__sweepLine = __webpack_exports__.Dw;
-var __webpack_exports__toScaleAxis = __webpack_exports__.xs;
-var __webpack_exports__traverseCp = __webpack_exports__.vU;
-var __webpack_exports__traverseEdges = __webpack_exports__.y9;
-var __webpack_exports__traverseVertices = __webpack_exports__.Fw;
-var __webpack_exports__trimMat = __webpack_exports__.QE;
-var __webpack_exports__vertexChildren = __webpack_exports__.pI;
-export { __webpack_exports__beziersToSvgPathStr as beziersToSvgPathStr, __webpack_exports__cpNodeComparator as cpNodeComparator, __webpack_exports__createCpNode as createCpNode, __webpack_exports__createPos as createPos, __webpack_exports__drawBranch as drawBranch, __webpack_exports__drawElemFunctions as drawElemFunctions, __webpack_exports__drawMat as drawMat, __webpack_exports__enableDebugForMat as enableDebugForMat, __webpack_exports__enhanceCpNode as enhanceCpNode, __webpack_exports__findMats as findMats, __webpack_exports__getAllOnLoop as getAllOnLoop, __webpack_exports__getBoundaryBezierPartsToNext as getBoundaryBezierPartsToNext, __webpack_exports__getBoundaryBeziersToNext as getBoundaryBeziersToNext, __webpack_exports__getBoundaryPieceBeziers as getBoundaryPieceBeziers, __webpack_exports__getBranches as getBranches, __webpack_exports__getChildren as getChildren, __webpack_exports__getClosestBoundaryPointCertified as getClosestBoundaryPointCertified, __webpack_exports__getClosestSquareDistanceToRect as getClosestSquareDistanceToRect, __webpack_exports__getCpNodesOnCircle as getCpNodesOnCircle, __webpack_exports__getCurveBetween as getCurveBetween, __webpack_exports__getCurveToNext as getCurveToNext, __webpack_exports__getFirstExit as getFirstExit, __webpack_exports__getPathsFromStr as getPathsFromStr, __webpack_exports__getProngCount as getProngCount, __webpack_exports__getRealProngCount as getRealProngCount, __webpack_exports__getShapeBounds as getShapeBounds, __webpack_exports__insertCpNode as insertCpNode, __webpack_exports__isFullyTerminating as isFullyTerminating, __webpack_exports__isOnSameCircle as isOnSameCircle, __webpack_exports__isSharp as isSharp, __webpack_exports__isTerminating as isTerminating, __webpack_exports__loopFromBeziers as loopFromBeziers, __webpack_exports__matCurveToNextVertex as matCurveToNextVertex, __webpack_exports__removeCpNode as removeCpNode, __webpack_exports__simplifyMat as simplifyMat, __webpack_exports__simplifyMatMapOnly as simplifyMatMapOnly, __webpack_exports__sweepLine as sweepLine, __webpack_exports__toScaleAxis as toScaleAxis, __webpack_exports__traverseCp as traverseCp, __webpack_exports__traverseEdges as traverseEdges, __webpack_exports__traverseVertices as traverseVertices, __webpack_exports__trimMat as trimMat, __webpack_exports__vertexChildren as vertexChildren };
+/******/ return __webpack_exports__;
+;
+})

@@ -47,7 +47,8 @@ const config_Basic = {
     ],
     output: {
         path: path.resolve(__dirname, 'browser'),
-        library: { type: 'module' }
+        libraryTarget: 'umd',
+        library: 'MAT'
     },
     experiments: { outputModule: true }
 }
