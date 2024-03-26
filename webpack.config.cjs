@@ -50,7 +50,7 @@ const config_Basic = {
         libraryTarget: 'umd',
         library: 'MAT'
     },
-    experiments: { outputModule: true }
+    // experiments: { outputModule: true }
 }
 
 
